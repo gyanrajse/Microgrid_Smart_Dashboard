@@ -265,6 +265,11 @@ The app can be hosted for free on [Streamlit Community Cloud](https://streamlit.
 
 The **Deploy** button in the top-right of the running app is a shortcut to this same flow.
 
+
+## Run the app
+
+python3 -m streamlit run src/app.py
+
 ---
 
 *Built for Schneider Electric · Microgrid Advanced Support · CRM Analytics*
