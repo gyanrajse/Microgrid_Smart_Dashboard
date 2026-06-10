@@ -20,6 +20,19 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+
+st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 # ══════════════════════════════════════════════════════════════════════════════
 # Styling
 # ══════════════════════════════════════════════════════════════════════════════
@@ -119,12 +132,7 @@ with st.sidebar:
     _logo_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "schneider_logo.jpeg")
     if os.path.exists(_logo_path):
         st.image(_logo_path, use_container_width=True)
-    st.markdown(
-        '<p class="microgrid-title" style="font-size:17px; font-weight:700; '
-        'letter-spacing:3px; text-align:center; margin-top:-6px; margin-bottom:4px;">'
-        'MICROGRID</p>',
-        unsafe_allow_html=True,
-    )
+    
     st.markdown("---")
     st.markdown("### Filters")
 
